@@ -18,9 +18,7 @@ public class Employees {
 	private int age;
 	private Date joining_date;
 	private String group_of_employee;
-	@ManyToMany(fetch=FetchType.EAGER)
-	@JoinTable(name="user_role",joinColumns=@JoinColumn(name="employee_id"),inverseJoinColumns=@JoinColumn(name="role_id"))
-	private Set<Role> roles;
+
 	public Employees() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -55,12 +53,7 @@ public class Employees {
 	public void setGroup_of_employee(String group) {
 		this.group_of_employee = group;
 	}
-	public Set<Role> getRoles() {
-		return roles;
-	}
-	public void setRoles(Set<Role> roles) {
-		this.roles = roles;
-	}
+	
 	
 	
 	

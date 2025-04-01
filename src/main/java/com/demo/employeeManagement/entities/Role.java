@@ -3,12 +3,14 @@ package com.demo.employeeManagement.entities;
 import java.security.PrivateKey;
 import java.util.Set;
 
+import org.springframework.security.core.GrantedAuthority;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 
 @Entity
-public class Role {
+public class Role implements GrantedAuthority{
 	@Id
 	private int id;
 	private String name;
@@ -41,6 +43,11 @@ public class Role {
 	public Role() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String getAuthority() {
+		// TODO Auto-generated method stub
+		return name;
 	}
 	
 	
