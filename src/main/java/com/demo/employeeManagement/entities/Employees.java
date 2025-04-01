@@ -17,9 +17,9 @@ public class Employees {
 	private String name;
 	private int age;
 	private Date joining_date;
-	private String group;
+	private String group_of_employee;
 	@ManyToMany(fetch=FetchType.EAGER)
-	@JoinTable(name="user_role",joinColumns=@JoinColumn(name="user_id"),inverseJoinColumns=@JoinColumn(name="role_id"))
+	@JoinTable(name="user_role",joinColumns=@JoinColumn(name="employee_id"),inverseJoinColumns=@JoinColumn(name="role_id"))
 	private Set<Role> roles;
 	public Employees() {
 		super();
@@ -49,11 +49,11 @@ public class Employees {
 	public void setJoining_date(Date joining_date) {
 		this.joining_date = joining_date;
 	}
-	public String getGroup() {
-		return group;
+	public String getGroup_of_employee() {
+		return group_of_employee;
 	}
-	public void setGroup(String group) {
-		this.group = group;
+	public void setGroup_of_employee(String group) {
+		this.group_of_employee = group;
 	}
 	public Set<Role> getRoles() {
 		return roles;
