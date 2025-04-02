@@ -4,8 +4,10 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.demo.employeeManagement.controller.PasswordUpdateRequest;
 import com.demo.employeeManagement.dao.UserRepository;
@@ -47,17 +49,51 @@ public class UserService{
 		else {
 			//check passwords
 			Users oldUsers = optional.get();
-			if(verifyHash(oldPassword, oldUsers.getPassword())) {
+			//System.out.println(oldPassword );
+			//System.out.println(oldUsers.getPassword());
+			if(verifyHash(oldPassword, oldUsers.getPassword()) && oldUsers.getId()==id) {
 				//means user is updating his own account
 				oldUsers.setPassword(generateHash(newPassword));
-				return oldUsers;
+				return userRepository.save(oldUsers);
 			}
 			else {
 				System.out.println("Password Mismatch");
-				return oldUsers;
+				throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Password Mismatch");
 				
 			}
 		}
 		
+	}
+	//Update Username By Id can only be done by User itself
+	public Users updateUsernameById(int id, String newUsername, String currentPassword) {
+		Optional<Users> optional = userRepository.findById(id);
+		
+		//System.out.println(currentPassword);
+		if(optional.get() != null) {
+			Users user = optional.get();
+			//System.out.println(user.getPassword());
+			if(verifyHash(currentPassword,user.getPassword())) {
+				//means user is updating his own account
+				user.setUsername(newUsername);
+				return userRepository.save(user);
+			}
+			else {
+				System.out.println("Password Mismatch");
+				throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Password Mismatch");
+				
+			}
+		}
+		else {
+			System.out.println("User id not found");
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User ID not found");
+		}
+	}
+	
+	public Users addNewUser(Users newUser) {
+		return userRepository.save(newUser);
+	}
+	
+	public void deleteUser(int id) {
+		userRepository.deleteById(id);
 	}
 }

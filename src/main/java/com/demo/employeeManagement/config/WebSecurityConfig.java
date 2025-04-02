@@ -31,7 +31,11 @@ public class WebSecurityConfig {
 			.requestMatchers(HttpMethod.PUT, "/employees/update/**").hasAnyRole("ADMIN","MANAGER")
 			.requestMatchers(HttpMethod.DELETE, "/employees/delete/**").hasAnyRole("ADMIN")
 			.requestMatchers(HttpMethod.POST, "/employees/add").hasAnyRole("ADMIN")
-			.requestMatchers(HttpMethod.POST, "/users/updatepassword/**").hasAnyRole("USER");
+			.requestMatchers(HttpMethod.POST, "/users/updatepassword/**").hasAnyRole("USER")
+			.requestMatchers(HttpMethod.POST, "/users/updateusername/**").hasAnyRole("USER")
+			.requestMatchers(HttpMethod.POST, "/users/add").hasAnyRole("ADMIN")
+			.requestMatchers(HttpMethod.DELETE, "/users/delete/**").hasAnyRole("ADMIN");
+			
 			
 		});
 		http.cors();

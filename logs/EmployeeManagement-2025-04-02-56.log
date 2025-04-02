@@ -1,0 +1,32 @@
+2025-04-02T21:05:42.606+05:30  INFO 17428 --- [EmployeeManagement] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-02T21:05:42.650+05:30  WARN 17428 --- [EmployeeManagement] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-02T21:05:42.663+05:30  INFO 17428 --- [EmployeeManagement] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-02T21:05:43.333+05:30  INFO 17428 --- [EmployeeManagement] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-02T21:05:43.388+05:30  INFO 17428 --- [EmployeeManagement] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02T21:05:43.653+05:30  WARN 17428 --- [EmployeeManagement] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-02T21:05:43.682+05:30  INFO 17428 --- [EmployeeManagement] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImplementation
+2025-04-02T21:05:44.071+05:30  INFO 17428 --- [EmployeeManagement] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-02T21:05:44.077+05:30  INFO 17428 --- [EmployeeManagement] [main] c.d.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 3.612 seconds (process running for 4.119)
+2025-04-02T21:05:48.289+05:30  INFO 17428 --- [EmployeeManagement] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-02T21:05:48.289+05:30  INFO 17428 --- [EmployeeManagement] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-02T21:05:48.291+05:30  INFO 17428 --- [EmployeeManagement] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-02T21:09:08.816+05:30  INFO 17428 --- [EmployeeManagement] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-02T21:09:08.819+05:30  INFO 17428 --- [EmployeeManagement] [RMI TCP Connection(8)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-02T21:09:08.824+05:30  INFO 17428 --- [EmployeeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-02T21:09:08.828+05:30  INFO 17428 --- [EmployeeManagement] [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02T21:09:08.830+05:30  INFO 17428 --- [EmployeeManagement] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-02T21:09:08.836+05:30  INFO 17428 --- [EmployeeManagement] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-02T21:09:11.132+05:30  INFO 24708 --- [EmployeeManagement] [main] c.d.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 23.0.2 with PID 24708 (D:\Incture\Esclipse\EmployeeManagement\target\classes started by kittu in D:\Incture\Esclipse\EmployeeManagement)
+2025-04-02T21:09:11.134+05:30  INFO 24708 --- [EmployeeManagement] [main] c.d.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-04-02T21:09:11.703+05:30  INFO 24708 --- [EmployeeManagement] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-02T21:09:11.751+05:30  INFO 24708 --- [EmployeeManagement] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2025-04-02T21:09:12.248+05:30  INFO 24708 --- [EmployeeManagement] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-02T21:09:12.267+05:30  INFO 24708 --- [EmployeeManagement] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-02T21:09:12.267+05:30  INFO 24708 --- [EmployeeManagement] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
