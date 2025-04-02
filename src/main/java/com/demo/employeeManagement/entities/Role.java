@@ -5,6 +5,8 @@ import java.util.Set;
 
 import org.springframework.security.core.GrantedAuthority;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
@@ -14,7 +16,9 @@ public class Role implements GrantedAuthority{
 	@Id
 	private int id;
 	private String name;
+	
 	@ManyToMany(mappedBy = "roles")
+	@JsonIgnore  // Prevent infinite recursion inside users because each user contains roles and each role again contains users
 	private Set<Users> users;
 	public Role(int id, String name, Set<Users> users) {
 		super();

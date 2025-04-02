@@ -30,14 +30,11 @@ public class EmployeeController {
 		List<Employees> empList = employeeService.getAllEmployees();
 		return empList;
 	}
-	
 	//Request to Retrieve by Id 
-	
 	@GetMapping("/employees/{id}")
 	public Employees getEmployeeById(@PathVariable("id") int id ) {
 		Employees employee = employeeService.findEmployeeById(id);
 		return employee;
-		
 	}
 	
 	//Request to update a employee by Id
@@ -46,7 +43,6 @@ public class EmployeeController {
 		//System.out.print(employee);
 		Employees emp = employeeService.updateEmployeeById(id, employee);
 		return emp;
-		
 	}
 	//Request to delete a employee By Id
 	@DeleteMapping("/employees/delete/{id}")
