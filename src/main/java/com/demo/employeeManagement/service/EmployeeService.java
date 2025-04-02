@@ -27,6 +27,11 @@ public class EmployeeService {
 		Optional<Employees>optional= employeeRepository.findById(id);
 		return optional.get();
 	}
+	public List<Employees> findEmployeeByDepartment(String department) {
+		List <Employees> empListMatchingDepartment = employeeRepository.findByDepartment(department);
+		return empListMatchingDepartment;
+	}
+	
 	public Employees updateEmployeeById(int id, Employees employee) {
 		Optional<Employees> optional = employeeRepository.findById(id);
 		Employees oldEmployee = optional.get();
@@ -34,7 +39,8 @@ public class EmployeeService {
 		oldEmployee.setName(employee.getName());
 		oldEmployee.setJoining_date(employee.getJoining_date());
 		oldEmployee.setAge(employee.getAge());
-		oldEmployee.setGroup_of_employee(employee.getGroup_of_employee());
+		oldEmployee.setDepartment(employee.getDepartment());
+		oldEmployee.setJob(employee.getJob());
 		
 		return employeeRepository.save(oldEmployee);
 	}
@@ -46,5 +52,10 @@ public class EmployeeService {
 	
 	public Employees addEmployee(Employees emp) {
 		return employeeRepository.save(emp);
+	}
+	
+	public List<Employees> findEmployeeByJob(String job) {
+		List <Employees> empListMatchingJob = employeeRepository.findByJob(job);
+		return empListMatchingJob;
 	}
 }

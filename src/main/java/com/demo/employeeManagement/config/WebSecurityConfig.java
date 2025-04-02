@@ -32,6 +32,7 @@ public class WebSecurityConfig {
 			.requestMatchers(HttpMethod.DELETE, "/employees/delete/**").hasAnyRole("ADMIN")
 			.requestMatchers(HttpMethod.POST, "/employees/add").hasAnyRole("ADMIN");
 		});
+		http.cors();
 		http.userDetailsService(userDetailServiceImplementation);
 		http.csrf(csrf-> csrf.disable());//cross-side request forgery
 		return http.build();

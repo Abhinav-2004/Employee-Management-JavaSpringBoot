@@ -1,0 +1,29 @@
+2025-04-02T15:23:50.019+05:30  INFO 9324 --- [EmployeeManagement] [main] c.d.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 23.0.2 with PID 9324 (D:\Incture\Esclipse\EmployeeManagement\target\classes started by kittu in D:\Incture\Esclipse\EmployeeManagement)
+2025-04-02T15:23:50.024+05:30  INFO 9324 --- [EmployeeManagement] [main] c.d.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-04-02T15:23:50.581+05:30  INFO 9324 --- [EmployeeManagement] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-02T15:23:50.630+05:30  INFO 9324 --- [EmployeeManagement] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2025-04-02T15:23:51.053+05:30  INFO 9324 --- [EmployeeManagement] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-02T15:23:51.063+05:30  INFO 9324 --- [EmployeeManagement] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-02T15:23:51.063+05:30  INFO 9324 --- [EmployeeManagement] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-02T15:23:51.111+05:30  INFO 9324 --- [EmployeeManagement] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-02T15:23:51.111+05:30  INFO 9324 --- [EmployeeManagement] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1034 ms
+2025-04-02T15:23:51.244+05:30  INFO 9324 --- [EmployeeManagement] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-02T15:23:51.279+05:30  INFO 9324 --- [EmployeeManagement] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-02T15:23:51.301+05:30  INFO 9324 --- [EmployeeManagement] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-02T15:23:51.509+05:30  INFO 9324 --- [EmployeeManagement] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-02T15:23:51.533+05:30  INFO 9324 --- [EmployeeManagement] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-02T15:23:51.851+05:30  INFO 9324 --- [EmployeeManagement] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a3c99f1
+2025-04-02T15:23:51.854+05:30  INFO 9324 --- [EmployeeManagement] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-02T15:23:51.898+05:30  WARN 9324 --- [EmployeeManagement] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-02T15:23:51.913+05:30  INFO 9324 --- [EmployeeManagement] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-02T15:23:52.579+05:30  INFO 9324 --- [EmployeeManagement] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-02T15:23:52.874+05:30  INFO 9324 --- [EmployeeManagement] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02T15:23:53.125+05:30  WARN 9324 --- [EmployeeManagement] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController': Unsatisfied dependency expressed through field 'employeeService': Error creating bean with name 'employeeService': Unsatisfied dependency expressed through field 'employeeRepository': Error creating bean with name 'employeeRepository' defined in com.demo.employeeManagement.dao.EmployeeRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.demo.employeeManagement.dao.EmployeeRepository.findByJob_title(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.demo.employeeManagement.dao.EmployeeRepository.findByJob_title(java.lang.String); No property 'job' found for type 'Employees'
+2025-04-02T15:23:53.126+05:30  INFO 9324 --- [EmployeeManagement] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

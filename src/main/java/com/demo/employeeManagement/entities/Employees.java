@@ -17,7 +17,8 @@ public class Employees {
 	private String name;
 	private int age;
 	private Date joining_date;
-	private String group_of_employee;
+	private String department;
+	private String job;
 
 	public Employees() {
 		super();
@@ -47,12 +48,19 @@ public class Employees {
 	public void setJoining_date(Date joining_date) {
 		this.joining_date = joining_date;
 	}
-	public String getGroup_of_employee() {
-		return group_of_employee;
+	public String getDepartment() {
+		return department;
 	}
-	public void setGroup_of_employee(String group) {
-		this.group_of_employee = group;
+	public void setDepartment(String department) {
+		this.department = department;
 	}
+	public String getJob() {
+		return job;
+	}
+	public void setJob(String job) {
+		this.job = job;
+	}
+	
 	
 	
 	
