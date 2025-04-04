@@ -1,0 +1,29 @@
+2025-04-05T02:31:15.972+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-4] c.d.e.controller.EmployeeController      : Fetching employees from department: System Engineer
+2025-04-05T02:31:15.976+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-4] c.d.e.service.EmployeeService            : Fetching employees in department: System Engineer
+2025-04-05T02:32:52.332+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-7] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:32:52.662+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-7] c.d.e.controller.EmployeeController      : Fetching employees from department: System Engineer
+2025-04-05T02:32:52.664+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-7] c.d.e.service.EmployeeService            : Fetching employees in department: System Engineer
+2025-04-05T02:33:11.605+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-9] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:33:11.934+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-9] c.d.e.controller.EmployeeController      : Fetching employees from department: Software Development Engineer
+2025-04-05T02:33:11.934+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-9] c.d.e.service.EmployeeService            : Fetching employees in department: Software Development Engineer
+2025-04-05T02:33:38.367+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-8] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:33:38.699+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-8] c.d.e.controller.EmployeeController      : Fetching employees from department: Software Development Engineer
+2025-04-05T02:33:38.699+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-8] c.d.e.service.EmployeeService            : Fetching employees in department: Software Development Engineer
+2025-04-05T02:33:55.575+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-1] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:33:55.900+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-1] c.d.e.controller.EmployeeController      : Fetching employees from department: Software Development Engineer
+2025-04-05T02:33:55.900+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-1] c.d.e.service.EmployeeService            : Fetching employees in department: Software Development Engineer
+2025-04-05T02:33:56.364+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-3] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:34:22.904+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-6] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:34:23.241+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-6] c.d.e.controller.EmployeeController      : Fetching employees from department: SoftwareDevelopmentEngineer
+2025-04-05T02:34:23.241+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-6] c.d.e.service.EmployeeService            : Fetching employees in department: SoftwareDevelopmentEngineer
+2025-04-05T02:34:58.001+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-9] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:34:58.326+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-9] c.d.e.controller.EmployeeController      : Fetching employees from department: A
+2025-04-05T02:34:58.327+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-9] c.d.e.service.EmployeeService            : Fetching employees in department: A
+2025-04-05T02:36:25.142+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-1] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:36:25.481+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-1] c.d.e.controller.EmployeeController      : Fetching employees with job title: System Engineer
+2025-04-05T02:36:25.482+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-1] c.d.e.service.EmployeeService            : Fetching employees with job title: System Engineer
+2025-04-05T02:40:57.098+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-4] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:40:57.432+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-4] c.d.e.controller.RoleController          : Fetching all roles
+2025-04-05T02:40:57.432+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-4] c.d.e.service.RoleService                : Fetching all roles
+2025-04-05T02:42:51.259+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-6] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:42:51.604+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-6] c.d.e.controller.RoleController          : Adding new role: ROLE_INTERN

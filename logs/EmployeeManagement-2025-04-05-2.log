@@ -1,0 +1,30 @@
+2025-04-05T02:03:16.372+05:30  INFO 24412 --- [EmployeeManagement] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-05T02:03:16.385+05:30  INFO 24412 --- [EmployeeManagement] [main] c.d.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 3.755 seconds (process running for 4.374)
+2025-04-05T02:18:41.632+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-05T02:18:41.633+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-05T02:18:41.634+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-05T02:18:41.789+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-2] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:18:42.449+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-2] c.d.e.controller.EmployeeController      : Fetching all employees
+2025-04-05T02:18:42.450+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-2] c.d.e.service.EmployeeService            : Fetching all employees
+2025-04-05T02:20:19.623+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-5] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:20:27.123+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-6] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:20:27.457+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-6] c.d.e.controller.EmployeeController      : Fetching employee with ID: 1000
+2025-04-05T02:20:27.457+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-6] c.d.e.service.EmployeeService            : Fetching employee with ID: 1000
+2025-04-05T02:22:14.293+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-8] c.d.e.service.UserService                : Fetching user by email: user
+2025-04-05T02:22:14.467+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-8] c.d.e.service.UserService                : Fetching user by email: user
+2025-04-05T02:22:33.918+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-10] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:22:34.255+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-10] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:22:44.888+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-1] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:22:59.609+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-2] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:23:16.803+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-3] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:23:57.094+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-4] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:23:57.485+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-4] c.d.e.controller.EmployeeController      : Updating employee with ID: 1001
+2025-04-05T02:23:57.486+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-4] c.d.e.service.EmployeeService            : Updating employee with ID: 1001
+2025-04-05T02:26:03.151+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-7] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:26:03.491+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-7] c.d.e.controller.EmployeeController      : Deleting employee with ID: 1001
+2025-04-05T02:26:03.491+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-7] c.d.e.service.EmployeeService            : Deleting employee with ID: 1001
+2025-04-05T02:27:23.452+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-10] c.d.e.service.UserService                : Fetching user by email: admin1@gmail.com
+2025-04-05T02:27:23.796+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-10] c.d.e.controller.EmployeeController      : Adding new employee: Employee2
+2025-04-05T02:27:23.796+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-10] c.d.e.service.EmployeeService            : Adding new employee: Employee2
+2025-04-05T02:28:17.003+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-1] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
+2025-04-05T02:31:15.634+05:30  INFO 24412 --- [EmployeeManagement] [http-nio-8080-exec-4] c.d.e.service.UserService                : Fetching user by email: user1@gmail.com
