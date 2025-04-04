@@ -1,0 +1,23 @@
+2025-04-03T15:21:15.118+05:30  INFO 22708 --- [EmployeeManagement] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-03T15:21:15.838+05:30  INFO 22708 --- [EmployeeManagement] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03T15:21:15.894+05:30  INFO 22708 --- [EmployeeManagement] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T15:21:16.171+05:30  WARN 22708 --- [EmployeeManagement] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03T15:21:16.199+05:30  INFO 22708 --- [EmployeeManagement] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImplementation
+2025-04-03T15:21:16.682+05:30  INFO 22708 --- [EmployeeManagement] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-03T15:21:16.688+05:30  INFO 22708 --- [EmployeeManagement] [main] c.d.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 3.97 seconds (process running for 4.503)
+2025-04-03T15:21:57.043+05:30  INFO 22708 --- [EmployeeManagement] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-03T15:21:57.045+05:30  INFO 22708 --- [EmployeeManagement] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-03T15:21:57.047+05:30  INFO 22708 --- [EmployeeManagement] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-03T16:18:25.988+05:30  INFO 22708 --- [EmployeeManagement] [RMI TCP Connection(59)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-03T16:18:26.001+05:30  INFO 22708 --- [EmployeeManagement] [RMI TCP Connection(59)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-03T16:18:26.011+05:30  INFO 22708 --- [EmployeeManagement] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-03T16:18:26.021+05:30  INFO 22708 --- [EmployeeManagement] [RMI TCP Connection(59)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T16:18:26.029+05:30  INFO 22708 --- [EmployeeManagement] [RMI TCP Connection(59)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-03T16:18:26.038+05:30  INFO 22708 --- [EmployeeManagement] [RMI TCP Connection(59)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

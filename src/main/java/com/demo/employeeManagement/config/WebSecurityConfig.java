@@ -40,7 +40,8 @@ public class WebSecurityConfig {
 			.requestMatchers(HttpMethod.DELETE, "/role/delete/**").hasAnyRole("ADMIN")
 			.requestMatchers(HttpMethod.GET, "/role/all").hasAnyRole("ADMIN","USER", "MANAGER","INTERN")
 			.requestMatchers(HttpMethod.POST, "/user-role/add").hasAnyRole("ADMIN")
-			.requestMatchers(HttpMethod.DELETE, "/user-role/delete").hasAnyRole("ADMIN");
+			.requestMatchers(HttpMethod.DELETE, "/user-role/delete").hasAnyRole("ADMIN")
+			.requestMatchers(HttpMethod.GET, "/users/**").hasAnyRole("ADMIN","USER","MANAGER");
 			
 		});
 		http.cors();//to call from browser frontend

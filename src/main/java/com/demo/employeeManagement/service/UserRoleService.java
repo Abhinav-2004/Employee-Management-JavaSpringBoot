@@ -1,5 +1,6 @@
 package com.demo.employeeManagement.service;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,33 +19,41 @@ public class UserRoleService {
 	private RoleRepository roleRepository;
 	@Autowired
 	private UserRepository userRepository;
-	
+	 private static final Logger logger = LoggerFactory.getLogger(UserRoleService.class);
 	
 	public void deleteRoleToUser(int userId,int roleId ) {
-		 Optional<Users> optional1 = userRepository.findById(userId);
-	        Optional<Role> optional2 = roleRepository.findById(roleId);
-	        if(optional1.get()!=null && optional2.get()!=null) {
-	        	Users user = optional1.get();
-	        	Role role = optional2.get();
-	        	user.getRoles().remove(role); // Add the role to the user
-	            userRepository.save(user); // Save user (JPA updates role_user table)
-	        }
-	        else {
-	        	throw new NullPointerException("Either of the role or user doesn't exists");
-	        }
+logger.info("Attempting to remove role (ID: {}) from user (ID: {})", roleId, userId);
+        
+        Optional<Users> optionalUser = userRepository.findById(userId);
+        Optional<Role> optionalRole = roleRepository.findById(roleId);
+
+        if (optionalUser.isPresent() && optionalRole.isPresent()) {
+            Users user = optionalUser.get();
+            Role role = optionalRole.get();
+            user.getRoles().remove(role);
+            userRepository.save(user);
+            logger.debug("Successfully removed role ID {} from user ID {}", roleId, userId);
+        } else {
+            logger.error("Failed to remove role from user - User ID: {}, Role ID: {}", userId, roleId);
+            throw new NullPointerException("Either the user or role does not exist");
+        }
 	}
 
     public void addRoleToUser(int userId, int roleId) {
-        Optional<Users> optional1 = userRepository.findById(userId);
-        Optional<Role> optional2 = roleRepository.findById(roleId);
-        if(optional1.get()!=null && optional2.get()!=null) {
-        	Users user = optional1.get();
-        	Role role = optional2.get();
-        	user.getRoles().add(role); // Add the role to the user
-            userRepository.save(user); // Save user (JPA updates role_user table)
-        }
-        else {
-        	throw new NullPointerException("Either of the role or user doesn't exists");
+    	logger.info("Attempting to add role (ID: {}) to user (ID: {})", roleId, userId);
+
+        Optional<Users> optionalUser = userRepository.findById(userId);
+        Optional<Role> optionalRole = roleRepository.findById(roleId);
+
+        if (optionalUser.isPresent() && optionalRole.isPresent()) {
+            Users user = optionalUser.get();
+            Role role = optionalRole.get();
+            user.getRoles().add(role);
+            userRepository.save(user);
+            logger.debug("Successfully added role ID {} to user ID {}", roleId, userId);
+        } else {
+            logger.error("Failed to add role to user - User ID: {}, Role ID: {}", userId, roleId);
+            throw new NullPointerException("Either the user or role does not exist");
         }
     }
     
