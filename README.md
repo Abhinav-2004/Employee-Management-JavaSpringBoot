@@ -1,4 +1,3 @@
-
 # 👨‍💼 Employee Management System (Spring Boot)
 
 This is a full-stack **Employee Management System** backend built using **Spring Boot**. It provides RESTful APIs to manage employees, roles, users, and their relationships.
@@ -46,38 +45,42 @@ com.demo.employeeManagement
 ## 📦 API Endpoints
 
 ### 👩‍💼 Employee APIs
-| Method | Endpoint                  | Description             |
-|--------|---------------------------|-------------------------|
-| GET    | `/employee/all`           | Get all employees       |
-| GET    | `/employee/{id}`          | Get employee by ID      |
-| POST   | `/employee/add`           | Add new employee        |
-| POST   | `/employee/update/{id}`   | Update employee         |
-| DELETE | `/employee/delete/{id}`   | Delete employee         |
-| GET    | `/employee/department/{department}` | Get by department |
-| GET    | `/employee/job/{job}`     | Get by job title        |
+
+| Method | Endpoint                            | Description        |
+| ------ | ----------------------------------- | ------------------ |
+| GET    | `/employee/all`                     | Get all employees  |
+| GET    | `/employee/{id}`                    | Get employee by ID |
+| POST   | `/employee/add`                     | Add new employee   |
+| POST   | `/employee/update/{id}`             | Update employee    |
+| DELETE | `/employee/delete/{id}`             | Delete employee    |
+| GET    | `/employee/department/{department}` | Get by department  |
+| GET    | `/employee/job/{job}`               | Get by job title   |
 
 ### 👤 User APIs
-| Method | Endpoint                        | Description                      |
-|--------|----------------------------------|----------------------------------|
-| GET    | `/users/{email}`                | Get user by email                |
-| POST   | `/users/add`                    | Add a new user                   |
-| POST   | `/users/updatepassword/{id}`    | Update password                  |
-| POST   | `/users/updateusername/{id}`    | Update username                  |
-| DELETE | `/users/delete/{id}`            | Delete user                      |
+
+| Method | Endpoint                     | Description       |
+| ------ | ---------------------------- | ----------------- |
+| GET    | `/users/{email}`             | Get user by email |
+| POST   | `/users/add`                 | Add a new user    |
+| POST   | `/users/updatepassword/{id}` | Update password   |
+| POST   | `/users/updateusername/{id}` | Update username   |
+| DELETE | `/users/delete/{id}`         | Delete user       |
 
 ### 🛡️ Role APIs
-| Method | Endpoint                | Description           |
-|--------|-------------------------|-----------------------|
-| GET    | `/role/all`             | Get all roles         |
-| POST   | `/role/add`             | Add new role          |
-| POST   | `/role/update/{id}`     | Update role by ID     |
-| DELETE | `/role/delete/{id}`     | Delete role by ID     |
+
+| Method | Endpoint            | Description       |
+| ------ | ------------------- | ----------------- |
+| GET    | `/role/all`         | Get all roles     |
+| POST   | `/role/add`         | Add new role      |
+| POST   | `/role/update/{id}` | Update role by ID |
+| DELETE | `/role/delete/{id}` | Delete role by ID |
 
 ### 🔁 User-Role APIs
-| Method | Endpoint              | Description                      |
-|--------|-----------------------|----------------------------------|
-| POST   | `/user-role/add`      | Assign role to user              |
-| DELETE | `/user-role/delete`   | Remove role from user            |
+
+| Method | Endpoint            | Description           |
+| ------ | ------------------- | --------------------- |
+| POST   | `/user-role/add`    | Assign role to user   |
+| DELETE | `/user-role/delete` | Remove role from user |
 
 ---
 
@@ -133,7 +136,7 @@ App runs at: `http://localhost:8080`
 ## 🧑‍💻 Author
 
 **Your Name**  
-GitHub: [@yourusername](https://github.com/yourusername)
+GitHub: [@Abhinav-2004](https://github.com/Abhinav-2004)
 
 ---
 
