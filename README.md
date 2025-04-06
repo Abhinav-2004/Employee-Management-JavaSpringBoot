@@ -135,7 +135,7 @@ App runs at: `http://localhost:8080`
 
 ## 🧑‍💻 Author
 
-**Your Name**  
+**Abhinav Singh**  
 GitHub: [@Abhinav-2004](https://github.com/Abhinav-2004)
 
 ---
